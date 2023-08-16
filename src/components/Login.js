@@ -25,11 +25,10 @@ const Login = () => {
   const config = {
     products: [Products.emailMagicLinks],
     emailMagicLinksOptions: {
-      loginRedirectURL:
-        "https://3000--dev--joe--jsjoeio--apps.dev.coder.com/authenticate",
+      // TODO@jsjoeio - use env vars for this
+      loginRedirectURL: "https://stytch-takehome.vercel.app//authenticate",
       loginExpirationMinutes: 60,
-      signupRedirectURL:
-        "https://3000--dev--joe--jsjoeio--apps.dev.coder.com/authenticate",
+      signupRedirectURL: "https://stytch-takehome.vercel.app//authenticate",
       signupExpirationMinutes: 60,
     },
   };
