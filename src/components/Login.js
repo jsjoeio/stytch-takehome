@@ -26,9 +26,9 @@ const Login = () => {
     products: [Products.emailMagicLinks],
     emailMagicLinksOptions: {
       // TODO@jsjoeio - use env vars for this
-      loginRedirectURL: "https://stytch-takehome.vercel.app//authenticate",
+      loginRedirectURL: "https://stytch-takehome.vercel.app/authenticate",
       loginExpirationMinutes: 60,
-      signupRedirectURL: "https://stytch-takehome.vercel.app//authenticate",
+      signupRedirectURL: "https://stytch-takehome.vercel.app/authenticate",
       signupExpirationMinutes: 60,
     },
   };
