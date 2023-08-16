@@ -1,5 +1,7 @@
 import { useStytch, useStytchSession, useStytchUser } from "@stytch/react";
 import React from "react";
+import AhsokaGuide from "./AhsokaGuide";
+import Header from "./Header";
 
 /*
 The Profile component is shown to a user that is logged in.
@@ -16,28 +18,17 @@ const Profile = () => {
   const { session } = useStytchSession();
 
   return (
+    <>
+    <Header />
     <div className="card">
-      <h1>Profile</h1>
-      <h2>User object</h2>
-      <pre className="code-block">
-        <code>{JSON.stringify(user, null, 2)}</code>
-      </pre>
-
-      <h2>Session object</h2>
-      <pre className="code-block">
-        <code>{JSON.stringify(session, null, 2)}</code>
-      </pre>
+      <h1>Your FREE Guide</h1>
       <p>
-        You are logged in, and a Session has been created. The SDK stores the
-        Session as a token and a JWT in the browser cookies as{" "}
-        <span className="code">stytch_session</span> and{" "}
-        <span className="code">stytch_session_jwt</span> respectively.
+        Thanks for joining the Ahsoka Super Fans! Here is your free guide:
       </p>
-      {/* Revoking the session results in the session being revoked and cleared from browser storage. The user will return to Login.js */}
-      <button className="primary" onClick={() => stytch.session.revoke()}>
-        Log out
-      </button>
+      <AhsokaGuide />
+      
     </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { StytchLogin } from "@stytch/react";
 import { Products } from "@stytch/vanilla-js";
+import Header from "./Header";
 
 /*
 Login configures and renders the StytchLogin component which is a prebuilt UI component for auth powered by Stytch
@@ -10,34 +11,34 @@ https://stytch.com/docs/sdks/javascript-sdk#ui-configs
 */
 const Login = () => {
   const styles = {
+    hideHeaderText: true,
     container: {
       width: "100%",
     },
     buttons: {
       primary: {
-        backgroundColor: "#4A37BE",
-        borderColor: "#4A37BE",
+        backgroundColor: "#000",
+        borderColor: "#000",
       },
     },
   };
   const config = {
-    products: [Products.emailMagicLinks, Products.oauth],
+    products: [Products.emailMagicLinks],
     emailMagicLinksOptions: {
-      loginRedirectURL: "http://localhost:3000",
+      loginRedirectURL:
+        "https://3000--dev--joe--jsjoeio--apps.dev.coder.com/authenticate",
       loginExpirationMinutes: 60,
-      signupRedirectURL: "http://localhost:3000",
-      signupExpirationMinutes: 60,
-    },
-    oauthOptions: {
-      providers: [{ type: "google" }],
-      loginRedirectURL: "http://localhost:3000",
-      loginExpirationMinutes: 60,
-      signupRedirectURL: "http://localhost:3000",
+      signupRedirectURL:
+        "https://3000--dev--joe--jsjoeio--apps.dev.coder.com/authenticate",
       signupExpirationMinutes: 60,
     },
   };
 
-  return <StytchLogin config={config} styles={styles} />;
+  return (
+    <>
+      <StytchLogin config={config} styles={styles} />
+    </>
+  );
 };
 
 export default Login;
