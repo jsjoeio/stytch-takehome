@@ -42,15 +42,15 @@ const AhsokaGuide = () => {
       <p class="mb-6">
         The anticipation reached a crescendo with the announcement of the Ahsoka
         series. This live-action production promises to bring Ahsoka's legend to
-        life like never before. With filming commencing in [Year], the series is
+        life like never before. With filming commencing in 2022, the series is
         set to explore uncharted territories of her past and future. Under the
-        masterful direction of [Director's Name], the cast includes
-        [Actor/Actress 1], [Actor/Actress 2], and [Actor/Actress 3], embodying
+        masterful direction of Dave Filoni, the cast includes
+        Rosario Dawson, Natasha Liu Bordizzo, and Wes Chatham, embodying
         the spirit of beloved characters.
       </p>
 
       <p class="mb-6">
-        As the production budgets soar to [Amount], every credit invested
+        As the production budgets soar for live-action Star Wars series, every credit invested
         reflects the grandeur of Ahsoka's universe. This guide is your backstage
         pass to the making of a legend, with insights into the creative minds,
         behind-the-scenes anecdotes, and a look at the dedication that has
